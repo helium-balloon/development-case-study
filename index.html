@@ -17,445 +17,254 @@
   <body>
     <header>
       <h1>Development Study</h1>
-      <p>
-        
-      </p>
+      <div class="center">
+        <p>
+          To practice my skills using React and learn about conducting a
+          competitive analysis, I embarked on this Development Study!
+        </p>
+      </div>
     </header>
     <main>
       <div>
-        <h2>Comptetitive Analysis</h2>
+        <h2>Competetitive Analysis</h2>
         <p>
-          
+          First up, I practiced conducting competitive analysis between
+          competitor companies. Through this process, I was able to idently
+          strengths and weaknesses in design elements employed by industry
+          designers. To do this, I chose 3 companies that utilise a favoriting
+          function, Spotify, Gmail, and EdStem. Below is the competitive
+          analysis chart I created regarding factors relating to the favoriting
+          function on each site.
         </p>
-        <div class="half">
-          <div class="center">
-            <h3>Competitive Analysis Chart</h3>
-            <img src="./assets/competitive-analysis.png" alt="Competitive Analysis chart" />
-          </div>
-          <div class="center">
-            <h3>Version B (Edited)</h3>
-            <img src="./assets/versionB.png" alt="changed design" />
-          </div>
+
+        <div class="">
+          <h3>Competitive Analysis Chart</h3>
+          <img
+            src="./assets/competitive-analysis.png"
+            alt="Competitive Analysis chart"
+          />
+        </div>
+
+        <p>
+          Using these websites, I discovered a lot about how favoriting
+          functions work on the three websites I chose - Spotify, Gmail, and
+          EdStem.
+        </p>
+        <div>
+          <ul class="list">
+            <li>
+              First for Spotify, the user interface design for the liked songs
+              is overall straightforward and similar to both Gmail and EdStem in
+              that you click an icon that changes from outlined to filled in to
+              show that it is liked. In addition, Spotify allows users to easily
+              search for the Liked Songs playlist by typing “liked” into the
+              search bar with no additional search criteria, labels, or
+              filtering. A weakness is that hovering over the heart can be
+              unintuitive because it states the opposite action, as it lets you
+              know what will happen if you click, but this can be confusing if
+              you think that is what the current state is. Additionally, if the
+              Liked Songs folder is not pinned, it could be difficult to find
+              depending on how a user organizes their playlists.
+            </li>
+            <br />
+            <li>
+              Next, like Spotify, Gmail also has a specific location where a
+              user can find their starred items. For Gmail, this folder is
+              always located right under the inbox, so you can get there in one
+              click. The hovering is also more intuitive than Spotify as a small
+              note will pop up letting the user know the current state of the
+              starred email. However, to find starred emails by searching, you
+              must use label:starred instead of just searching “starred” which
+              can be slower.
+            </li>
+            <br />
+            <li>
+              Thirdly, EdStem’s main strength is having a very simple interface
+              with not many tools or folders on screen. However, for starred
+              posts, this means that there is not a specific folder like Gmail
+              or Spotify, but only by using the filter mechanism can a user
+              filter for starred posts. This is the same for searching much like
+              Gmail, where one cannot search for “starred”, but must filter
+              first then search.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>TL;DR Strengths and Weaknesses</h3>
+          <ul class="list">
+            <li>Spotify</li>
+            <li style="list-style-type: none">
+              <ul class="circle">
+                <li>
+                  Strengths: can search for whole folder without filtering first
+                </li>
+                <li>
+                  Weaknesses: hovering can be unintuitive; folder could
+                  difficult to find if not pinned
+                </li>
+              </ul>
+            </li>
+            <li>Gmail</li>
+            <li style="list-style-type: none">
+              <ul class="circle">
+                <li>
+                  Strengths: easy to find, hovering intuitive tells you if
+                  starred or not
+                </li>
+                <li>
+                  Weaknesses: cannot search for all starred must filter instead
+                </li>
+              </ul>
+            </li>
+            <li>EdStem</li>
+            <li style="list-style-type: none">
+              <ul class="circle">
+                <li>Strengths: simple interface</li>
+                <li>
+                  Weaknesses: not a specific folder/location for them besides
+                  using the filter; cannot search for all starred must filter
+                  instead
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          Based on what I found in my competitive analysis, I'd like to
+          implement the following factors and designs:
+        </p>
+        <div>
+          <ul class="list">
+            <li>
+              Easily clickable with visual element for the user to click and see
+              an immediate change
+            </li>
+            <li>
+              One place with all the elements of a specific grouping, such as a
+              folder
+            </li>
+            <li>
+              Search by keyword, including overall groups (Note: For this
+              project, I did not end up adding in this functionality)
+            </li>
+          </ul>
         </div>
       </div>
 
       <div>
         <h2>Implementation</h2>
         <p>
-          Using the data collected during the A/B Testing studio, I made
-          hypotheses on three different metrics based on what I believe I will
-          find after completing statistical tests comparing the two sets of
-          data.
+          For the implementation of an application that uses lists and an
+          aggregator, I chose a photo app for my theme where users can like
+          photos shown on the page. <br />
+          <br />I incorporate filters by allowing users to filter using the
+          category of photo (nature, animals, food) and also by size of photo
+          (small, medium, large). I incorporate sorting by allowing users to
+          alphabetically sort the list of photos by name, helping them find the
+          photo they’re looking for. To aggregate, I have a “Favorites” list at
+          the bottom of the page. When users click the heart on a photo that
+          photo will be added to their favorites list. This allows users to
+          create a list with their favorite photos all in one place.
         </p>
-        <div>
-          <h3>Metrics</h3>
-          <ul class="list">
-            <li>
-              <b>Misclick Rate</b> - the frequency with which users click
-              something else on the page before finding the correct button for
-              the task
-            </li>
-            <li>
-              <b>Time on Page</b> - time spent on the webpage for each user
-              group
-            </li>
-            <li>
-              <b>Number of Clicks</b> - how many times users clicked on the page
-            </li>
-          </ul>
-          <p>
-            My metric of choice is the number of clicks users used to complete
-            the task. I chose this because I noticed that there was a large
-            variety of clicks used to complete the task, especially in the A
-            task, and I wanted to see what the data looked like comparing the
-            two in terms of clicks. In addition, I think that this is a useful
-            metric because if it takes less clicks, then we can infer the task
-            may be easier for the user to complete.
-          </p>
-        </div>
-
-        <div>
-          <h3>Null and Alternative Hypotheses</h3>
-          <ul class="list">
-            <li><b>Misclick Rate</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  <i>Null Hypothesis -</i> The misclick rate is the same in
-                  sample A and sample B.
-                </li>
-                <li>
-                  <i>Alternative Hypothesis -</i> The misclick rate from sample
-                  A is different than the misclick rate from sample B.
-                </li>
-                <li>
-                  <i>Justification - </i>I made this alternative hypothesis
-                  because in version A, no one knew how the website worked and
-                  it was a confusing interface so more people were more likely
-                  to misclick. However, in version B, the interface was more
-                  clear and understandable, so the misclick rate will likely
-                  differ.
-                </li>
-              </ul>
-            </li>
-            <li><b>Time on Page</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  <i>Null Hypothesis -</i> The time spent on page is the same in
-                  sample A and sample B.
-                </li>
-                <li>
-                  <i>Alternative Hypothesis -</i> The time spent on page is
-                  greater in sample A than in sample B.
-                </li>
-                <li>
-                  <i>Justification -</i> I made this alternative hypothesis
-                  because in version A, people are more likely to make mistakes
-                  because the interface has poor contrast and organization,
-                  leading them to spend more time on the page especially if they
-                  misclick and make mistakes. On the other hand, if version B is
-                  easier to use and understand, users will be able to complete
-                  the task in a shorter amount of time because the steps are
-                  more clear.
-                </li>
-              </ul>
-            </li>
-            <li><b>Number of Clicks</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  Null Hypothesis: The number of clicks used to complete the
-                  task is the same in sample A and sample B.
-                </li>
-                <li>
-                  Alternative Hypothesis: The number of clicks used to complete
-                  the task is greater in sample A than sample B.
-                </li>
-                <li>
-                  <i>Justification -</i> I made this alternative hypothesis
-                  because in version A, people are more likely to make mistakes
-                  and end up clicking multiple things, which will increase the
-                  number of clicks. On the other hand, in version B, people will
-                  be more likely to find what they are looking for and click a
-                  smaller amount of times to get there because the interface is
-                  more intuitive through making the buttons and hospital
-                  locations more readable.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Predictions</h3>
-          <ul class="list">
-            <li><b>Misclick Rate</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  I believe that I will end up rejecting the null hypothesis
-                  based on the data. In the data from Version A, about one half
-                  of people misclicked at least once during their attempt.
-                  However, during Version B testing, no users misclicked.
-                  Through testing this data, I expect that the p-value will
-                  indicate that the difference between these two findings is
-                  significant. Because of this, I expect to reject the null
-                  hypothesis.
-                </li>
-              </ul>
-            </li>
-            <li><b>Time on Page</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  I believe that I will end up rejecting the null hypothesis
-                  after looking at the data for each version. From version A
-                  testing, the majority of data points are over 20,000
-                  milliseconds. However, in Version B testing, the users rarely
-                  exceeded 10,000 milliseconds on the page. Due to this large
-                  difference I witnessed in the data, I expect that through the
-                  tests, the p-value will indicate that the amount of decrease
-                  in time on page from Version A to Version B is significant.
-                  Thus, I expect to reject the null hypothesis.
-                </li>
-              </ul>
-            </li>
-            <li><b>Number of Clicks</b></li>
-            <li style="list-style-type: none">
-              <ul class="circle">
-                <li>
-                  I believe that I will end up rejecting the null hypothesis
-                  through viewing the data from each version. I noticed that in
-                  the version A data, there was a large difference in the number
-                  of clicks different people took to complete the task, ranging
-                  from 2 to 26. On the other hand, in the Version B data, there
-                  was little variability in the number of clicks, as people only
-                  used 2-4 clicks. Because of this large difference in the
-                  number of clicks used in the different versions, I believe
-                  that the p-value will indicate that the amount of decrease in
-                  the number of clicks from Version A to Version B is
-                  significant. Through this, I expect to reject the null
-                  hypothesis.
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div>
-        <h2>Statistical Tests</h2>
         <p>
-          After creating my hypotheses, I ran statistical tests on the metrics
-          explained above to learn the impact of my A/B testing. For each test,
-          the significance level used is &alpha;=0.05.
+          My deployed app can be found
+          <a
+            href="https://react-development-orpin.vercel.app/"
+            class="no-margin-or-padding"
+            >here</a
+          >.
         </p>
+
         <div>
-          <h3>Misclick Rate</h3>
-          <div class="half">
-            <div class="most">
-              <p>
-                For the misclick rate, I chose to run a chi squared test because
-                misclick can be represented as a boolean value which can be
-                split into two categories: did misclick and did not misclick. In
-                sample A, 12 users misclicked and 12 users did not misclick. In
-                sample B, 0 users misclicked and 22 users did not misclick.
-                <br /><br />
+          <h3>App Functionality</h3>
+          <table>
+            <tr>
+              <th>Functionality</th>
+              <th>About</th>
+              <th>Image</th>
+            </tr>
+            <tr>
+              <td>Filtering</td>
+              <td>
+                I include 2 ways to filter - by category and by photo size
+              </td>
+              <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+              <td>Filtering</td>
+              <td>
+                I include 2 ways to filter - by category and by photo size
+              </td>
+              <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+              <td>Filtering</td>
+              <td>
+                I include 2 ways to filter - by category and by photo size
+              </td>
+              <td><img src="" alt=""></td>
+            </tr>
+          </table>
 
-                Because the p-value is less than 0.05, as noted in the table,
-                the difference between versions A and B with respect to misclick
-                rate is significant. We can come to the same conclusion through
-                using the chi squared statistic as well, which is 14.88. Using
-                the degree of freedom which is 1, we can find the chi squared
-                critical value is 3.841, which is less than the chi squared
-                value, so the magnitude of difference between the two groups is
-                significant. In addition, we can use the chi squared value and
-                the degrees of freedom to confirm the p-value.<br /><br />
-
-                <b
-                  >Because the p-value is significant and the chi-square
-                  statistic is significant, we find statistically significant
-                  evidence that the alternative hypothesis is true.</b
-                >
-              </p>
+          <!-- <div class="flex-container">
+            <div class="row">
+              <div>Filtering</div>
+              <div>
+                I include 2 ways to filter - by category and by photo size
+              </div>
+              <img src="" alt="" />
             </div>
-            <div class="test">
-              <table>
-                <tr>
-                  <th>Outputs</th>
-                </tr>
-                <tr>
-                  <td>df</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>chi^2</td>
-                  <td>14.88</td>
-                </tr>
-                <tr>
-                  <td>p-value</td>
-                  <td>0.00011</td>
-                </tr>
-              </table>
+            <div class="row">
+              <div>Sorting</div>
+              <div>The images can be sorted alphabetically by name</div>
+              <img src="" alt="" />
             </div>
-          </div>
+            <div class="row">
+              <div>Reset</div>
+              <div>
+                All filters and sorts can be reset by the "Clear All" button
+              </div>
+              <img src="" alt="" />
+            </div>
+            <div class="row">
+              <div>Aggregator</div>
+              <div>
+                The favorities aggregator total updates when users add or remove
+                items by including the item in the favorite list and updating
+                the number of items that are favorited
+              </div>
+              <img src="" alt="" />
+            </div>
+            <div class="row">
+              <div>Item Cards</div>
+              <div>
+                12 item cards are included in this application, each displaying
+                its image, name, categories for filter, fields for sort (name),
+                and a button to add and remove the item from the aggregator
+              </div>
+              <img src="" alt="" />
+            </div>
+            <div class="row">
+              <div>Compatability</div>
+              <div>
+                Filter and sort are compatible and work in combination. You can click as many combinations of filters and the sort.
+              </div>
+              <img src="" alt="" />
+            </div>
+          </div> -->
+          <!-- <ul class="list">
+            <li>Filtering</li>
+            <li>Sorting??</li>
+            <li>Reset etc...</li>
+          </ul> -->
         </div>
+
         <div>
-          <h3>Time on Page</h3>
-          <div class="half">
-            <div class="most">
-              <p>
-                I chose to run a one-tailed t-test for the time on page because
-                this piece of information is a number, not a category, and I
-                believe that the most important information can be gleaned from
-                understanding if the version B time on page is smaller than
-                version A. Doing a two-tailed t-test would tell me only if they
-                are significantly different, but in this case I want to see if
-                version B is faster. <br /><br />
-
-                Using this test, the outputs are noted in the table. These
-                results show that the degrees of freedom for this metric is
-                approximately 24. This means that there are 24 pieces of
-                information to estimate the variability in the data which
-                impacts the critical values of the t-distribution, and the
-                higher degrees of freedom, the closer the t-distribution
-                resembles the normal distribution. Next, the t-score is 9.578,
-                and the p-value when A &lt; B is 0.99999. Because my alternative
-                hypothesis states that A &gt; B, and these outputs are for when
-                A &lt; B, I will do 1-p to get my p-value of approximately
-                0.0000000004. <br /><br />
-
-                Because the p-value for this metric is &lt;= 0.05, the amount
-                that A is larger than B is significant for the time spend on the
-                page. Furthermore, using the t-value and the degrees of freedom,
-                I can confirm this p-value.
-                <br /><br />
-
-                <b
-                  >Because the p-value is significant, I have found
-                  statistically significant evidence that the alternative
-                  hypothesis is true.</b
-                >
-              </p>
-            </div>
-            <div class="center">
-              <table>
-                <tr>
-                  <th>Outputs</th>
-                </tr>
-                <tr>
-                  <td>df</td>
-                  <td>24</td>
-                </tr>
-                <tr>
-                  <td>t-value</td>
-                  <td>9.578</td>
-                </tr>
-                <tr>
-                  <td>p-value</td>
-                  <td>0.0000000004</td>
-                </tr>
-                <tr>
-                  <td>Avg(A)</td>
-                  <td>36138.5</td>
-                </tr>
-                <tr>
-                  <td>Variance(A)</td>
-                  <td>212313712.7</td>
-                </tr>
-                <tr>
-                  <td>Avg(B)</td>
-                  <td>7374.045</td>
-                </tr>
-                <tr>
-                  <td>Variance(B)</td>
-                  <td>3805972.3</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+          <h2>Conclusions</h2>
+          <p>what i learned; overall ideas ....</p>
         </div>
-        <div>
-          <h3>Number of Clicks</h3>
-          <div class="half">
-            <div class="most">
-              <p>
-                I chose to run a one-tailed test for the number of clicks on a
-                page because this statistic is a number, not a category, and I
-                believe that important information can be taken away from this
-                metric through understanding if the number of clicks in version
-                B is smaller than the number of clicks in version A. The degrees
-                of freedom for this metric is approximately 23, the T-score is
-                4.12, and the p-value is 0.9997. Because my alternative
-                hypothesis states that A &gt; B, and these outputs are for when
-                A &lt; B, I will do 1-p to get my p-value of approximately
-                0.00021 for my hypothesis.<br /><br />
-
-                Because the p-value &lt;=0.05, we find that the amount that A is
-                larger than B is significant for the number of clicks used to
-                complete the task. Furthermore, using the t-value and the
-                degrees of freedom, I can confirm this p-value.
-                <br />
-                <br />
-
-                <b
-                  >Because the p-value is significant, we find statistically
-                  significant evidence that the alternative hypothesis is
-                  true.</b
-                >
-              </p>
-            </div>
-
-            <div class="center">
-              <table>
-                <tr>
-                  <th>Outputs</th>
-                </tr>
-                <tr>
-                  <td>df</td>
-                  <td>23</td>
-                </tr>
-                <tr>
-                  <td>t-value</td>
-                  <td>4.11588</td>
-                </tr>
-                <tr>
-                  <td>p-value</td>
-                  <td>0.00021</td>
-                </tr>
-                <tr>
-                  <td>Avg(A)</td>
-                  <td>8.833</td>
-                </tr>
-                <tr>
-                  <td>Variance(A)</td>
-                  <td>62.405</td>
-                </tr>
-                <tr>
-                  <td>Avg(B)</td>
-                  <td>2.18</td>
-                </tr>
-                <tr>
-                  <td>Variance(B)</td>
-                  <td>0.251</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h2>Summary Statistics</h2>
-        <p>
-          There is a lot that can be learned about the differences in
-          performance for version A and version B simply through looking at the
-          summary statistics including variance and mean.
-          <br /><br />
-
-          Most significantly in the data is the average and variance for each of
-          these versions in relation to the number of clicks used to complete
-          the task. In version A, the average number of clicks to complete the
-          task is 8.83 clicks and the variance is 62.40. This reveals that there
-          is a large difference in the number of clicks it takes to complete the
-          task in version A for users. In comparison, for version B, the average
-          number of clicks to complete the task is 2.18 and the variance is
-          0.25. This reveals that there is a very small amount of change in the
-          number of clicks taken to complete the task in version B across users.
-          <br /><br />
-
-          Using these averages and variances, we can conclude that the number of
-          clicks to complete the task is much higher in version A than version
-          B, indicating that version B is more efficient for the user. Secondly,
-          using variance, we can conclude that the amount of clicks to complete
-          the task differs a lot for users in version A but not in version B.
-          This indicates that version B is easier to follow and more efficient.
-          The variability and number of clicks can also speak to the rate of
-          misclicks, as found earlier, version A had more misclicks, so it makes
-          logical sense that the overall amount of clicks would be greater for
-          version A as well.
-        </p>
-      </div>
-
-      <div>
-        <h2>Conclusions</h2>
-        <p>
-          Through these three metrics, it is likely that version B is better
-          than version A. We see that on average people spend less time
-          completing the task, have less misclicks, and have less clicks overall
-          using version B. This allows users to complete this task faster and
-          easier. I believe that this difference is due to the changes in the
-          interface in version B, where the two options, “See Appointment” and
-          “Schedule Appointment”, are visually different by being different
-          colors and having a greater contrast between background and text color
-          to be read more easily. In addition, the location of the appointment
-          is made clearer through bolding the location. <br /><br />
-
-          With the help of A/B Testing and statistical analysis, I was able to
-          confidently determine that the changes in B offered significant
-          positive changes to the user experience.
-        </p>
       </div>
     </main>
   </body>

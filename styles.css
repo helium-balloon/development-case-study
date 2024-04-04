@@ -33,7 +33,7 @@ a {
   margin: 10px;
 }
 img {
-  width: 80%;
+  width: 40%;
   object-fit: contain;
   border: 1px solid black;
 }
@@ -47,6 +47,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 ul.circle {
   list-style-type: circle;
@@ -77,4 +78,18 @@ table {
 .test {
   display: flex;
   justify-content: center;
+}
+
+.no-margin-or-padding{
+    margin: 0px;
+    padding: 0px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
