@@ -37,57 +37,62 @@
           function on each site.
         </p>
 
-        <div class="">
-          <h3>Competitive Analysis Chart</h3>
-          <img
-            src="./assets/competitive-analysis.png"
-            alt="Competitive Analysis chart"
-          />
-        </div>
-
-        <p>
-          Using these websites, I discovered a lot about how favoriting
-          functions work on the three websites I chose - Spotify, Gmail, and
-          EdStem.
-        </p>
-        <div>
-          <ul class="list">
-            <li>
-              First for Spotify, the user interface design for the liked songs
-              is overall straightforward and similar to both Gmail and EdStem in
-              that you click an icon that changes from outlined to filled in to
-              show that it is liked. In addition, Spotify allows users to easily
-              search for the Liked Songs playlist by typing “liked” into the
-              search bar with no additional search criteria, labels, or
-              filtering. A weakness is that hovering over the heart can be
-              unintuitive because it states the opposite action, as it lets you
-              know what will happen if you click, but this can be confusing if
-              you think that is what the current state is. Additionally, if the
-              Liked Songs folder is not pinned, it could be difficult to find
-              depending on how a user organizes their playlists.
-            </li>
-            <br />
-            <li>
-              Next, like Spotify, Gmail also has a specific location where a
-              user can find their starred items. For Gmail, this folder is
-              always located right under the inbox, so you can get there in one
-              click. The hovering is also more intuitive than Spotify as a small
-              note will pop up letting the user know the current state of the
-              starred email. However, to find starred emails by searching, you
-              must use label:starred instead of just searching “starred” which
-              can be slower.
-            </li>
-            <br />
-            <li>
-              Thirdly, EdStem’s main strength is having a very simple interface
-              with not many tools or folders on screen. However, for starred
-              posts, this means that there is not a specific folder like Gmail
-              or Spotify, but only by using the filter mechanism can a user
-              filter for starred posts. This is the same for searching much like
-              Gmail, where one cannot search for “starred”, but must filter
-              first then search.
-            </li>
-          </ul>
+        <div class="half">
+          <div class="center">
+            <h3>Competitive Analysis Chart</h3>
+            <img
+              id="chart"
+              src="./assets/competitive-analysis.png"
+              alt="Competitive Analysis chart"
+            />
+          </div>
+          <div class="take-up-half">
+            <p>
+              Using these websites, I discovered a lot about how favoriting
+              functions work on the three websites I chose - Spotify, Gmail, and
+              EdStem.
+            </p>
+            <div>
+              <ul class="list">
+                <li>
+                  First for Spotify, the user interface design for the liked
+                  songs is overall straightforward and similar to both Gmail and
+                  EdStem in that you click an icon that changes from outlined to
+                  filled in to show that it is liked. In addition, Spotify
+                  allows users to easily search for the Liked Songs playlist by
+                  typing “liked” into the search bar with no additional search
+                  criteria, labels, or filtering. A weakness is that hovering
+                  over the heart can be unintuitive because it states the
+                  opposite action, as it lets you know what will happen if you
+                  click, but this can be confusing if you think that is what the
+                  current state is. Additionally, if the Liked Songs folder is
+                  not pinned, it could be difficult to find depending on how a
+                  user organizes their playlists.
+                </li>
+                <br />
+                <li>
+                  Next, like Spotify, Gmail also has a specific location where a
+                  user can find their starred items. For Gmail, this folder is
+                  always located right under the inbox, so you can get there in
+                  one click. The hovering is also more intuitive than Spotify as
+                  a small note will pop up letting the user know the current
+                  state of the starred email. However, to find starred emails by
+                  searching, you must use label:starred instead of just
+                  searching “starred” which can be slower.
+                </li>
+                <br />
+                <li>
+                  Thirdly, EdStem’s main strength is having a very simple
+                  interface with not many tools or folders on screen. However,
+                  for starred posts, this means that there is not a specific
+                  folder like Gmail or Spotify, but only by using the filter
+                  mechanism can a user filter for starred posts. This is the
+                  same for searching much like Gmail, where one cannot search
+                  for “starred”, but must filter first then search.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div>
@@ -179,7 +184,7 @@
 
         <div>
           <h3>App Functionality</h3>
-          <table>
+          <table id="table-center">
             <tr>
               <th>Functionality</th>
               <th>About</th>
@@ -190,80 +195,60 @@
               <td>
                 I include 2 ways to filter - by category and by photo size
               </td>
-              <td><img src="" alt=""></td>
+              <td class="image-center"><img src="./assets/filter.png" alt="" /></td>
             </tr>
             <tr>
-              <td>Filtering</td>
-              <td>
-                I include 2 ways to filter - by category and by photo size
-              </td>
-              <td><img src="" alt=""></td>
+              <td>Sorting</td>
+              <td>The images can be sorted alphabetically by name</td>
+              <td class="image-center"><img src="./assets/sort.png" alt="" /></td>
             </tr>
             <tr>
-              <td>Filtering</td>
+              <td>Reset</td>
               <td>
-                I include 2 ways to filter - by category and by photo size
-              </td>
-              <td><img src="" alt=""></td>
-            </tr>
-          </table>
-
-          <!-- <div class="flex-container">
-            <div class="row">
-              <div>Filtering</div>
-              <div>
-                I include 2 ways to filter - by category and by photo size
-              </div>
-              <img src="" alt="" />
-            </div>
-            <div class="row">
-              <div>Sorting</div>
-              <div>The images can be sorted alphabetically by name</div>
-              <img src="" alt="" />
-            </div>
-            <div class="row">
-              <div>Reset</div>
-              <div>
                 All filters and sorts can be reset by the "Clear All" button
-              </div>
-              <img src="" alt="" />
-            </div>
-            <div class="row">
-              <div>Aggregator</div>
-              <div>
+              </td>
+              <td class="image-center"><img src="./assets/clear.png" alt="" /></td>
+            </tr>
+            <tr>
+              <td>Aggregator</td>
+              <td>
                 The favorities aggregator total updates when users add or remove
                 items by including the item in the favorite list and updating
                 the number of items that are favorited
-              </div>
-              <img src="" alt="" />
-            </div>
-            <div class="row">
-              <div>Item Cards</div>
-              <div>
+              </td>
+              <td class="image-center"><img src="./assets/favorites.png" id="favorites" alt="" /></td>
+            </tr>
+            <tr>
+              <td>Item Cards</td>
+              <td>
                 12 item cards are included in this application, each displaying
                 its image, name, categories for filter, fields for sort (name),
                 and a button to add and remove the item from the aggregator
-              </div>
-              <img src="" alt="" />
-            </div>
-            <div class="row">
-              <div>Compatability</div>
-              <div>
-                Filter and sort are compatible and work in combination. You can click as many combinations of filters and the sort.
-              </div>
-              <img src="" alt="" />
-            </div>
-          </div> -->
-          <!-- <ul class="list">
-            <li>Filtering</li>
-            <li>Sorting??</li>
-            <li>Reset etc...</li>
-          </ul> -->
+              </td>
+              <td class="image-center"><img src="./assets/imagecard.png" id="image-card" alt="" /></td>
+            </tr>
+            <tr>
+              <td>Compatability</td>
+              <td>
+                Filter and sort are compatible and work in combination. You can
+                click as many combinations of filters and the sort. (Pictured is
+                sorted and filtered by nature)
+              </td>
+              <td class="image-center"><img src="./assets/filter&sort.png" id="filter-sort" alt="" /></td>
+            </tr>
+          </table>
         </div>
 
         <div>
           <h2>Conclusions</h2>
-          <p>what i learned; overall ideas ....</p>
+          <p>
+            Throughout this process, I gained experience with developing
+            software in React as well as in conducting a competitive analysis. I
+            found it incredibly rewarding to take the design principles talked
+            about in class and apply them to an app that works. These same
+            principles can be applied to a variety of areas in both professional
+            and academic contexts.
+          </p>
         </div>
       </div>
     </main>
