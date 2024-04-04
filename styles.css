@@ -1,0 +1,80 @@
+h1 {
+  font-family: "Rubik";
+  text-align: center;
+}
+h2 {
+  font-family: "Rubik";
+  padding: 10px;
+  margin: 10px;
+}
+h3 {
+  font-family: "Rubik";
+  padding: 10px;
+  margin: 10px;
+}
+h4 {
+  font-family: "Rubik";
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body {
+  background-color: white;
+}
+p {
+  font-family: "Gothic A1";
+  padding: 10px;
+  margin: 10px;
+}
+a {
+  font-family: "Gothic A1";
+  padding: 10px;
+  margin: 10px;
+}
+img {
+  width: 80%;
+  object-fit: contain;
+  border: 1px solid black;
+}
+.half {
+    display: flex;
+    flex-direction: row;
+
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul.circle {
+  list-style-type: circle;
+  line-height: 1.5;
+}
+.list{
+    font-family: "Gothic A1";
+    line-height: 1.5;
+}
+li {
+    margin-right: 10px;
+}
+table, td, th{
+    border: 1px solid;
+    font-family: "Gothic A1";
+    padding: 10px
+}
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    margin-left: 20px;
+    align-self: center;
+    width: 80%
+}
+.most {
+    width: 75%;
+}
+.test {
+  display: flex;
+  justify-content: center;
+}
